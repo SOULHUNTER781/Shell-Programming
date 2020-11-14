@@ -1,0 +1,13 @@
+import os
+
+path=input("Enter the filename")
+if os.path.isdir(path):
+    print("Directory")
+elif os.path.isfile(path):
+    print("Normal File")
+elif os.path.islink(path):
+    print("Symbolic link")
+else:
+    print("It is a special file (socket,FIFO,Device file)")
+
+    print()
